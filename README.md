@@ -10,7 +10,7 @@ Project is intended to create OPA5 tests in application.
 - Use SAP BUILD as code source to avoid create UI 
 
 # SAP BUILD
-http://builme.me
+http://build.me
 
 # Development environment
 https://webide-iusertrial.dispatcher.hanatrial.ondemand.com
