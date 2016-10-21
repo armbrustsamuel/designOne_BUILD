@@ -1,0 +1,212 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.1444936542098_S1" xmlns:uxap="sap.uxap" xmlns:m="sap.m"
+	xmlns:form="sap.ui.layout.form">
+	<uxap:ObjectPageLayout id="sap_uxap_ObjectPageLayout_0" showTitleInHeaderContent="true" showHeaderContent="true" showAnchorBar="true"
+		subSectionLayout="TitleOnTop">
+		<uxap:headerTitle>
+			<uxap:ObjectPageHeader id="sap_uxap_ObjectPageHeader_1" objectImageURI="{Image}" objectTitle="{Name}" objectSubtitle="{ID}"
+				headerDesign="Dark" objectImageShape="Circle" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="false"
+				isObjectSubtitleAlwaysVisible="false" isActionAreaAlwaysVisible="true">
+				<uxap:actions>
+					<m:Button id="np-sap_m_Button-1444936794371-05I" iconDensityAware="false" text="Add to Cart" type="Default" icon="sap-icon://cart"
+						iconFirst="true" width="auto" enabled="true" visible="true" press="_onButtonPress"/>
+				</uxap:actions>
+				<uxap:breadCrumbsLinks/>
+				<uxap:navigationBar>
+					<m:Bar id="np-sap_m_Bar-1444936673226-059" design="Auto">
+						<m:contentLeft>
+							<m:Button id="np-sap_m_Button-1444936682812-05E" iconDensityAware="false" text="" type="Back" iconFirst="false" width="auto" enabled="true"
+								visible="true" press="_onButtonPress1"/>
+						</m:contentLeft>
+						<m:contentMiddle/>
+						<m:contentRight/>
+					</m:Bar>
+				</uxap:navigationBar>
+			</uxap:ObjectPageHeader>
+		</uxap:headerTitle>
+		<uxap:headerContent>
+			<m:VBox id="sap_m_VBoxLinks_2" displayInline="false" justifyContent="Start" alignItems="Stretch" direction="Column" fitContainer="false"
+				width="auto" renderType="Div" visible="true">
+				<m:items>
+					<m:ObjectNumber id="np-sap_m_ObjectNumber-1444936746171-05G" number="{Price}" unit="{Currency}" state="Success"/>
+				</m:items>
+				<m:layoutData/>
+			</m:VBox>
+			<m:Label id="sap_m_Label_5" text="Rating" design="Bold" width="auto" required="false" textAlign="Begin" textDirection="Inherit"/>
+			<m:RatingIndicator id="np-sap_m_RatingIndicator-1444936875272-05K" value="{AvgRating}" maxValue="5" visualMode="Half" enabled="false"
+				visible="true"/>
+		</uxap:headerContent>
+		<uxap:sections>
+			<uxap:ObjectPageSection id="sap_uxap_ObjectPageSection_6" showTitle="true" title="Page Section Title" titleUppercase="true" visible="true">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection id="sap_uxap_ObjectPageSubSection_7" title="Product Info" mode="Expanded">
+						<uxap:blocks>
+							<form:SimpleForm id="np-sap_ui_layout_form_SimpleForm-1444936930912-05M" minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout"
+								editable="false" visible="true">
+								<form:title/>
+								<form:content>
+									<m:Label id="np-sap_m_Label-1444936930914-05O" text="Remaining Pieces" design="Standard" width="auto" required="false" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Text id="np-sap_m_Text-1444936930914-05P" text="{Pieces}" width="auto" maxLines="1" wrapping="true" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Label id="np-sap_m_Label-1444936930914-05Q" text="Instruction" design="Standard" width="auto" required="false" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Text id="np-sap_m_Text-1444936930914-05R" text="{Instruction}" width="auto" maxLines="3" wrapping="true" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Label id="np-sap_m_Label-1444936930914-05S" text="No of Reviews" design="Standard" width="auto" required="false" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Text id="np-sap_m_Text-1444936930914-05T" text="{NoofReview}" width="auto" maxLines="1" wrapping="true" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Label id="np-sap_m_Label-1444937002255-064" text="Notes" design="Standard" width="auto" required="false" textAlign="Begin"
+										textDirection="Inherit"/>
+									<m:Text id="np-sap_m_Text-1444937012144-066" text="{Notes}" width="auto" maxLines="1" wrapping="true" textAlign="Begin"
+										textDirection="Inherit"/>
+								</form:content>
+							</form:SimpleForm>
+						</uxap:blocks>
+						<uxap:moreBlocks/>
+						<uxap:actions/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+				<uxap:customAnchorBarButton/>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection id="np-sap_uxap_ObjectPageSection-1444937231467-07I" showTitle="true" title="Page Section Title"
+				titleUppercase="true" visible="true">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J" title="Related Products" mode="Expanded">
+						<uxap:blocks>
+							<m:Table id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272" width="100%" noDataText="No data"
+								mode="None" showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false"
+								items="{path:'RelatedProduct', parameters:{expand:'Product'}}" itemPress="_onTableItemPress">
+								<m:headerToolbar/>
+								<m:columns>
+									<m:Column id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-1"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="WithoutHeader" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-1-header-sap_m_Text-1"
+												text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+									<m:Column id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-2"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-2-header-sap_m_Text-1"
+												text="Product" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+									<m:Column id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-5"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-columns-build_simple_Column-5-header-sap_m_Text-1"
+												text="Rating" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+								</m:columns>
+								<m:items>
+									<m:ColumnListItem id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-items-build_simple_Row-1"
+										type="Navigation">
+										<m:cells>
+											<m:Image
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-items-build_simple_Row-1-cells-sap_m_Image-1"
+												densityAware="false" src="{Product/Image}" height="53px" width="53px"/>
+											<m:ObjectIdentifier
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-items-build_simple_Row-1-cells-sap_m_ObjectIdentifier-2"
+												title="{Product/Name}" text="{Product/ID}" titleActive="false" visible="true"/>
+											<m:RatingIndicator
+												id="np-sap_uxap_ObjectPageSubSection-1444937231469-07J-blocks-build_simple_Table-1472711704272-items-build_simple_Row-1-cells-sap_m_RatingIndicator-5"
+												value="{Product/AvgRating}" maxValue="5" visualMode="Half" enabled="false" visible="true"/>
+										</m:cells>
+									</m:ColumnListItem>
+								</m:items>
+							</m:Table>
+						</uxap:blocks>
+						<uxap:moreBlocks/>
+						<uxap:actions/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+				<uxap:customAnchorBarButton/>
+			</uxap:ObjectPageSection>
+			<uxap:ObjectPageSection id="np-sap_uxap_ObjectPageSection-1444937233606-07T" showTitle="true" title="Page Section Title"
+				titleUppercase="true" visible="true">
+				<uxap:subSections>
+					<uxap:ObjectPageSubSection id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U" title="Reviews" mode="Expanded">
+						<uxap:blocks>
+							<m:Table id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798" width="100%" noDataText="No data"
+								mode="None" showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false"
+								items="{path:'ReviewSet', parameters:{expand:'Reviewpostedby'}}" itemPress="_onTableItemPress1">
+								<m:headerToolbar/>
+								<m:columns>
+									<m:Column
+										id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711854712"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711854712-header-sap_m_Text-1"
+												text="Author" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+									<m:Column
+										id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711851583"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711851583-header-sap_m_Text-1"
+												text="Review Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+									<m:Column id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-4"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-4-header-sap_m_Text-1"
+												text="Country" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+									<m:Column id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-5"
+										width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+										<m:header>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-5-header-sap_m_Text-1"
+												text="Rating" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+										</m:header>
+										<m:footer/>
+									</m:Column>
+								</m:columns>
+								<m:items>
+									<m:ColumnListItem id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-items-build_simple_Row-1"
+										type="Navigation">
+										<m:cells>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711854713"
+												text="{Reviewpostedby/AuthorName}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-columns-build_simple_Column-1472711851584"
+												text="{Date}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+											<m:Text
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-items-build_simple_Row-1-cells-sap_m_Text-4"
+												text="{Reviewpostedby/Country}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+											<m:RatingIndicator
+												id="np-sap_uxap_ObjectPageSubSection-1444937233607-07U-blocks-build_simple_Table-1472711831798-items-build_simple_Row-1-cells-sap_m_RatingIndicator-5"
+												value="{Rating}" maxValue="5" visualMode="Half" enabled="false" visible="true"/>
+										</m:cells>
+									</m:ColumnListItem>
+								</m:items>
+							</m:Table>
+						</uxap:blocks>
+						<uxap:moreBlocks/>
+						<uxap:actions/>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+				<uxap:customAnchorBarButton/>
+			</uxap:ObjectPageSection>
+		</uxap:sections>
+	</uxap:ObjectPageLayout>
+</mvc:View>

@@ -1,0 +1,85 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.1444936040491_S0" xmlns:m="sap.m">
+	<m:Page id="sap_Responsive_Page_0" showHeader="true" title="Toyland Products" showFooter="false" showNavButton="false">
+		<m:content>
+			<m:Table id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098" width="100%" noDataText="No data" mode="None"
+				showSeparators="All" growing="false" growingThreshold="20" growingScrollToLoad="false" items="{/ProductSet}" itemPress="_onTableItemPress2">
+				<m:headerToolbar/>
+				<m:columns>
+					<m:Column id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1472711347729" width="auto"
+						hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="WithoutHeader" mergeDuplicates="false">
+						<m:header>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1472711347729-header-sap_m_Text-1"
+								text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:header>
+						<m:footer/>
+					</m:Column>
+					<m:Column id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1" width="auto" hAlign="Left"
+						vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<m:header>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1-header-sap_m_Text-1" text="Product"
+								width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:header>
+						<m:footer/>
+					</m:Column>
+					<m:Column id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-3" width="auto" hAlign="Left"
+						vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+						<m:header>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-3-header-sap_m_Text-1" text="Price"
+								width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:header>
+						<m:footer/>
+					</m:Column>
+					<m:Column id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-2" width="auto" hAlign="Left"
+						vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+						<m:header>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-2-header-sap_m_Text-1"
+								text="Remaining Pieces" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:header>
+						<m:footer/>
+					</m:Column>
+					<m:Column id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1472711365893" width="auto"
+						hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+						<m:header>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-columns-build_simple_Column-1472711365893-header-sap_m_Text-1"
+								text="Rating" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+						</m:header>
+						<m:footer/>
+					</m:Column>
+				</m:columns>
+				<m:items>
+					<m:ColumnListItem id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1" type="Navigation">
+						<m:cells>
+							<m:Image
+								id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1-cells-build_simple_TableCell-1472711347734-content-sap_m_Image-1472711394022"
+								densityAware="false" src="{Image}" height="53px" width="53px"/>
+							<m:ObjectIdentifier
+								id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1-cells-sap_m_ObjectIdentifier-1" title="{Name}"
+								text="{ID}" titleActive="false" visible="true"/>
+							<m:ObjectNumber id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1-cells-sap_m_ObjectNumber-3"
+								number="{Price}" unit="{Currency}" state="None"/>
+							<m:Text id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1-cells-sap_m_Text-2" text="{Notes}"
+								width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+							<m:RatingIndicator
+								id="sap_Responsive_Page_0-content-build_simple_Table-1472711338098-items-build_simple_Row-1-cells-build_simple_TableCell-1472711365896-content-sap_m_RatingIndicator-1472711376922"
+								value="{AvgRating}" maxValue="5" visualMode="Half" enabled="false" visible="true"/>
+						</m:cells>
+					</m:ColumnListItem>
+				</m:items>
+			</m:Table>
+		</m:content>
+		<m:footer>
+			<m:Toolbar id="sap_m_Toolbar_1" width="auto" height="35px" design="Solid" enabled="true" visible="true">
+				<m:content>
+					<m:ToolbarSpacer id="sap_m_ToolbarSpacer_2" width=""/>
+					<m:Button id="sap_m_Button_3" iconDensityAware="false" text="Accept" type="Accept" iconFirst="false" width="auto" enabled="true"
+						visible="true"/>
+					<m:Button id="sap_m_Button_4" iconDensityAware="false" text="Reject" type="Reject" iconFirst="false" width="auto" enabled="true"
+						visible="true"/>
+				</m:content>
+			</m:Toolbar>
+		</m:footer>
+		<m:headerContent/>
+		<m:subHeader/>
+		<m:customHeader/>
+	</m:Page>
+</mvc:View>

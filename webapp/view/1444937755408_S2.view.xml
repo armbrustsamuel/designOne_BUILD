@@ -1,0 +1,46 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.1444937755408_S2" xmlns:m="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<m:Page id="sap_Responsive_Page_0" showHeader="true" title="Review" showFooter="false" showNavButton="true"
+		navButtonPress="_onPageNavButtonPress">
+		<m:content>
+			<form:SimpleForm id="np-sap_ui_layout_form_SimpleForm-1444937820351-06H" minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout"
+				editable="false" visible="true">
+				<form:title>
+					<core:Title id="np-sap_ui_core_Title-1444937820353-06I" level="H3"/>
+				</form:title>
+				<form:content>
+					<m:Label id="np-sap_m_Label-1444937820353-06J" text="Author" design="Standard" width="auto" required="false" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Text id="np-sap_m_Text-1444937820353-06K" text="{Reviewpostedby/AuthorName}" width="auto" maxLines="1" wrapping="true" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Label id="np-sap_m_Label-1444937820353-06L" text="Review Date" design="Standard" width="auto" required="false" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Text id="np-sap_m_Text-1444937820353-06M" text="{Date}" width="auto" maxLines="1" wrapping="true" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Label id="np-sap_m_Label-1444937820353-06N" text="Comment" design="Standard" width="auto" required="false" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Text id="np-sap_m_Text-1444937820353-06O" text="{Comment}" width="auto" maxLines="20" wrapping="true" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:Label id="np-sap_m_Label-1444970712633-075" text="Rating" design="Standard" width="auto" required="false" textAlign="Begin"
+						textDirection="Inherit"/>
+					<m:RatingIndicator id="np-sap_m_RatingIndicator-1444970723947-077" value="{Rating}" maxValue="5" visualMode="Half" enabled="false"
+						visible="true"/>
+				</form:content>
+			</form:SimpleForm>
+		</m:content>
+		<m:footer>
+			<m:Toolbar id="sap_m_Toolbar_1" width="auto" height="35px" design="Solid" enabled="true" visible="true">
+				<m:content>
+					<m:ToolbarSpacer id="sap_m_ToolbarSpacer_2" width=""/>
+					<m:Button id="sap_m_Button_3" iconDensityAware="false" text="Accept" type="Accept" iconFirst="false" width="auto" enabled="true"
+						visible="true"/>
+					<m:Button id="sap_m_Button_4" iconDensityAware="false" text="Reject" type="Reject" iconFirst="false" width="auto" enabled="true"
+						visible="true"/>
+				</m:content>
+			</m:Toolbar>
+		</m:footer>
+		<m:headerContent/>
+		<m:subHeader/>
+		<m:customHeader/>
+	</m:Page>
+</mvc:View>
